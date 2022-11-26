@@ -4,6 +4,10 @@
 
 // [345, 897, 568, 234] -> 2
 
+
+int size = GenSize();
+int[] array = Randomaser(size);
+int chet= 0;
 int GenSize()
 {
     int A = new Random().Next(0, 10);
@@ -19,9 +23,7 @@ int[] Randomaser (int size)
     }
     return arr;
 }
-int size = GenSize();
-int[] array = Randomaser(size);
-int chet= 0;
+
 for (int i = 0; i < array.Length; i++)
 {
     int g = array[i] % 2;
